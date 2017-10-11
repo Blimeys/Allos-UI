@@ -1,0 +1,25 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	body {
+		font-size: var(--mobile-font-size);
+	}
+	p {
+		font-size: var(--paragraph-font-regular-mobile);
+	}
+	h1,
+	h2 {
+		font-size: var(--title-font-size-large-mobile);
+	}
+	h3,
+	h4 {
+		font-size: var(--title-font-size-medium-mobile);
+	}
+	h5,
+	h6 {
+		font-size: var(--title-font-size-small-mobile);
+	}
+	.selector {
+		font-size: var(--title-font-size-small-mobile);
+		height: 100px;
+		min-width: 20rem;
+	}
+}

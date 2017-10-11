@@ -1,0 +1,23 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(2rem, auto);
+}
+.header {
+	grid-column: 1 / 11;
+	grid-row: 1;
+	background-color: green;
+}
+.header-logo {
+	grid-column: 2 / 10;
+	grid-row: 1;
+}
+.header-user {
+	grid-column: 9 / 10;
+	grid-row: 1;
+}
+.content {
+	grid-column: 2 / 10;
+	grid-row: 2;
+}
