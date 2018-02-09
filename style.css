@@ -1,19 +1,20 @@
 :root {
 	--primary-font: 'Open Sans', sans-serif;
 	--secondary-font: 'Muli', sans-serif;
+	--third-font: 'News Cycle', sans-serif;
 	--default-font-size: 14px;
 	--mobile-font-size: 30px;
 	--title-font-size-large: 2rem;
 	--title-font-size-medium: 1.5rem;
 	--title-font-size-small: 1.2rem;
 	--paragraph-font-regular: 1rem;
-	--paragraph-font-small: 0.8rem;
+	--paragraph-font-small: 0.9rem;
 
 	/*MOBILE*/
-	--title-font-size-large-mobile: 6rem;
-	--title-font-size-medium-mobile: 4rem;
-	--title-font-size-small-mobile: 3.5rem;
-	--paragraph-font-regular-mobile: 1.4rem;
+	--title-font-size-large-mobile: 1.5rem;
+	--title-font-size-medium-mobile: 1rem;
+	--title-font-size-small-mobile: 0.8rem;
+	--paragraph-font-regular-mobile: 0.7rem;
 }
 body {
 	font-size: var(--default-font-size);
@@ -50,8 +51,8 @@ body {
 	height: 25px;
 }
 .buttons-clickable {
-	transition: background 400ms cubic-bezier(0.4, 0.0, 0.2, 1),
-		box-shadow 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+	transition: background 400ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1);
 	-webkit-tab-highlight-color: rgba(0, 0, 0, 0) !important;
 	cursor: pointer;
 }
@@ -66,12 +67,15 @@ body {
 .buttons-clickable:active {
 	background-color: #add88a;
 }
+.button-active {
+	background-color: #add88a;
+}
 .fa-circle {
 	color: #c85c59;
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14),
 		0px 3px 1px rgba(0, 0, 0, 0.12);
-	transition: color 400ms cubic-bezier(0.4, 0.0, 0.2, 1),
-		box-shadow 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+	transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fa-stack:hover {
 	cursor: pointer;
@@ -79,15 +83,7 @@ body {
 .fa-stack:hover .fa-circle {
 	color: #b73f3d;
 }
-.delete-button {
-	color: #c85c59;
-	transition: color 400ms cubic-bezier(0.4, 0.0, 0.2, 1),
-		box-shadow 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-.delete-button:hover {
-	cursor: pointer;
-	color: #b73f3d;
-}
+
 input {
 	padding: 10px;
 	border: none;
@@ -133,13 +129,104 @@ p {
 	font-family: var(--primary-font);
 	font-size: var(--paragraph-font-regular);
 }
+a {
+}
+.header-user {
+	font-family: var(--primary-font);
+	font-size: var(--paragraph-font-regular);
+	text-decoration: none;
+	color: white;
+}
+.header-user i {
+	margin-right: 13px;
+	cursor: pointer;
+	transition: color 300ms ease-out;
+}
+.header-user i:hover {
+	color: #edbb26;
+}
+.header-user i:last-child {
+	margin-right: 0px;
+}
+a:visited {
+	color: #353c4a;
+}
+.blank-button {
+	border-style: none;
+	background-color: transparent;
+	border: none;
+}
 .logo-left-font {
-	font-family: 'Dancing Script', cursive;
-	font-size: var(--title-font-size-large);
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 19px;
 	position: relative;
 	bottom: 2px;
+	line-height: 48px;
+	color: white;
+	padding-left: 10px;
 }
-.logo-right-font {
-	font-family: var(--secondary-font);
-	font-size: var(--title-font-size-large);
+.logo-container {
+	display: flex;
+	float: right;
+	margin-top: 5px;
+}
+.logo-circle {
+	font-family: 'Fjalla One', sans-serif;
+	display: block;
+	height: 40px;
+	width: 40px;
+	-moz-border-radius: 50%; /* or 50% */
+	border-radius: 50%; /* or 50% */
+	background-color: #edbb26;
+	color: #211e1e;
+	text-align: center;
+	font-size: 30px;
+}
+
+.allergen {
+	display: inline-block;
+	font-family: var(--primary-font);
+	color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	margin-right: 7px;
+	border-radius: 20px 20px 20px 20px;
+	font-weight: 600;
+}
+.allergenOff {
+	background-color: #add88a;
+}
+.allergenOn {
+	background-color: #c85c59;
+}
+.card {
+	position: relative;
+	padding: 16px 24px;
+	border-radius: 2px;
+	border-style: none;
+	border-width: 1px;
+	border-color: #353c4a;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+		0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.card-description {
+	border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+.allergen-container {
+	max-width: 100%;
+}
+.sub-title {
+	font-size: 18px;
+}
+.sub-paragraph {
+	font-size: var(--paragraph-font-small);
+}
+.sub-paragraph-large {
+	font-size: 1.1rem;
 }

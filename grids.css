@@ -1,23 +1,78 @@
 .container {
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-gap: 0px;
-	grid-auto-rows: minmax(2rem, auto);
+	grid-template-areas:
+		'header header header' 'left content right' 'left-content middle-content right-content'
+		'left-footer middle-footer right-footer';
+	/*grid-template-rows: 80px 1fr 70px;*/
+	grid-template-columns: 10% 80% 10%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
 }
-.header {
-	grid-column: 1 / 11;
-	grid-row: 1;
-	background-color: green;
+.footer {
+	grid-area: middle-footer-content;
 }
-.header-logo {
-	grid-column: 2 / 10;
-	grid-row: 1;
+.footer-content {
+	display: grid;
+	grid-template-areas: 'left-footer-content middle-footer-content right-footer-content';
+	grid-template-rows: 1fr;
+	grid-template-columns: 20% 1fr 20%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
 }
-.header-user {
-	grid-column: 9 / 10;
-	grid-row: 1;
+.header-content {
+	display: grid;
+	grid-template-areas: 'left middle right';
+	grid-template-rows: 1fr;
+	grid-template-columns: 20% 1fr 30%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
 }
 .content {
-	grid-column: 2 / 10;
-	grid-row: 2;
+	grid-area: middle-content-middle;
+}
+.middle-content {
+	display: grid;
+	grid-template-areas: 'left-content-middle middle-content-middle right-content-middle';
+	grid-template-rows: 1fr;
+	grid-template-columns: 20% 1fr 20%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
+}
+.header {
+	grid-area: header;
+}
+.header-logo {
+	grid-area: left;
+	margin-left: 10rem;
+	position: relative;
+}
+.header-user {
+	grid-area: right;
+	display: flex;
+	align-items: center;
+	margin-right: 10rem;
+	margin-left: auto;
+}
+.main {
+	grid-area: content;
+}
+.main-content {
+	display: grid;
+	grid-template-areas: 'main-left main-middle main-right';
+	grid-template-columns: minmax(max-content, 500px) minmax(200px; 1fr), 100px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 5% 1fr 5%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
+}
+.locations-container {
+}
+.category-container {
+}
+.item-container {
 }

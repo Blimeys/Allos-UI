@@ -1,0 +1,16 @@
+.footer {
+	background-color: #211e1e;
+}
+.middle-footer-content ul {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+.middle-footer-content ul li {
+	display: inline-block;
+	margin-right: 15px;
+	font-family: var(--primary-font);
+	color: white;
+}
