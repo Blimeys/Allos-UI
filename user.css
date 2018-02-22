@@ -15,9 +15,10 @@ body {
 	display: grid;
 	grid-template-areas: 'location-left location-right';
 	grid-template-columns: 35% 65%;
+	grid-template-rows: 20%;
 	grid-row-gap: 0px;
 	grid-column-gap: 0px;
-	margin-top: 30px;
+	margin-top: 6vh;
 }
 .location-grid-title {
 	grid-area: location-left;
@@ -58,7 +59,7 @@ body {
 	margin-right: 10px;
 	font-size: 12px;
 	color: #4a4a4a;
-	padding: 11px 12px 10px;
+	padding: 11px 12px 12px;
 	border: 1px solid;
 	border-radius: 2px;
 	border-color: #211e1e;

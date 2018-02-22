@@ -1,0 +1,35 @@
+.public-menu-container {
+	display: grid;
+	grid-template-areas: 'item price';
+	/*grid-template-rows: 80px 1fr 70px;*/
+	grid-template-columns: 80% 20%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
+}
+.public-menu-item {
+	grid-area: item;
+}
+.public-menu-price {
+	grid-area: price;
+}
+.public-menu-grid {
+	display: grid;
+	grid-template-areas: 'left allergens right' 'left items right';
+	/*grid-template-rows: 80px 1fr 70px;*/
+	grid-template-columns: 10% 80% 10%;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin: 0;
+}
+.allergens {
+	grid-area: allergens;
+}
+.public-items-area {
+	grid-area: items;
+}
+.public-menu-price {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

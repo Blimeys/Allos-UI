@@ -34,7 +34,8 @@
 }
 .form-grid-top {
 	grid-area: top;
-	height: max-content;
+	/* height: max-content;
+	white-space: nowrap; */
 }
 .form-grid-right {
 	grid-area: right;
@@ -148,6 +149,7 @@
 	margin-top: 10px;
 	padding-left: 10px;
 	line-height: 52px;
+	overflow: hidden;
 }
 input {
 	width: 90%;
@@ -219,4 +221,7 @@ textarea::placeholder {
 	border-left: 0px;
 	border-right: 0px;
 	display: grid;
+}
+.location-confirm {
+	font-size: 25px;
 }
