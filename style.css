@@ -110,7 +110,7 @@ input:focus {
 h2 {
 	font-family: var(--primary-font);
 	font-weight: 400;
-	font-size: var(--title-font-size-large);
+	font-size: var(--title-font-size-small);
 }
 h1 {
 	font-family: var(--secondary-font);

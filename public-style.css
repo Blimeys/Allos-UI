@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: #fafafa;
 }
 .public-footer {
 	background-color: white;
@@ -8,10 +8,18 @@ body {
 	float: inherit;
 	display: flex;
 	justify-content: center;
+	margin-top: 10px;
 }
-
+.public-item-area {
+	background-color: white;
+}
 .public-footer span:hover {
 	cursor: pointer;
+}
+.public-menu-item p {
+	color: #827d80;
+	margin-top: 2px;
+	font-weight: 100;
 }
 .selector-box {
 	margin-top: 2vh;
@@ -34,6 +42,7 @@ body {
 	text-align: center;
 	color: #211e1e;
 	text-transform: capitalize;
+	font-weight: 100;
 }
 .public-allergen-selector {
 	width: 100%;
@@ -114,9 +123,31 @@ body {
 }
 .public-menu-item h2 {
 	margin: 0;
+	font-weight: 100;
 }
-.public-category h2 {
+.public-menu-price p {
+	font-weight: 100;
+}
+.public-menu-item {
+	padding-left: 8px;
+}
+.category-header {
 	margin: 0;
+	margin-left: -5px;
+	padding-left: 5px;
+	border-left: 4px;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 0;
+	border-style: solid;
+	border-color: #edbb26;
+}
+.public-category {
+	margin-top: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.public-allergen-selector {
@@ -125,5 +156,22 @@ body {
 	}
 	.public-footer {
 		position: fixed;
+	}
+	.public-menu-price p {
+		font-size: 3rem;
+	}
+	.public-menu-item h2 {
+		font-size: 1rem;
+	}
+	.allergens ul li {
+		font-size: 2rem;
+	}
+	.location-header h1 {
+		font-size: 4rem;
+	}
+	.logo-circle {
+		height: 80px;
+		width: 80px;
+		font-size: 55px;
 	}
 }
