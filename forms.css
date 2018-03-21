@@ -225,3 +225,12 @@ textarea::placeholder {
 .location-confirm {
 	font-size: 25px;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+.form-grid {
+	grid-row-gap: 0;
+}
+.confirm-box {
+	display: flex;
+	min-height: 100%;
+}
+}

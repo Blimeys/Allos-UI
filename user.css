@@ -256,3 +256,19 @@ body {
 }
 .items-container {
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.location-grid {
+		grid-template-areas: 'location-left' 'location-right';
+		grid-template-columns: 100%;
+	}
+	.items-grid {
+		grid-template-columns: 100%;
+	}
+	.item-description {
+		margin-right: 20px;
+	}
+	.location-grid {
+		margin-top: 0px;
+	}
+}
