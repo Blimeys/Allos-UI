@@ -53,6 +53,13 @@ body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+.location-selector ul {
+	padding:0;
+}
+.location-selector ul li {
+	list-style: none;
+	float:left;
+}
 .user-location {
 	font-family: var(--primary-font);
 	text-transform: capitalize;
@@ -270,5 +277,15 @@ body {
 	}
 	.location-grid {
 		margin-top: 0px;
+	}
+	.location-selector {
+		margin-left: 8px;
+		margin-right: 8px;
+		margin-bottom: 0px;
+	}
+	.location-selector ul li {
+		list-style: none;
+		float:left;
+		margin-bottom: 20px;
 	}
 }

@@ -8,7 +8,7 @@
 }
 .form-grid {
 	display: grid;
-	grid-template-areas: 'top top' 'left right' 'bottom-left bottom-right';
+	grid-template-areas: 'top top' 'left left' 'right right' 'bottom-left bottom-right';
 	grid-template-columns: 75% 25%;
 	grid-row-gap: 20px;
 	grid-column-gap: 0px;
@@ -230,7 +230,6 @@ textarea::placeholder {
 	grid-row-gap: 0;
 }
 .confirm-box {
-	display: flex;
-	min-height: 100%;
+
 }
 }
